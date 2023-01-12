@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Website do curso de desenvolvimento web e multimedia do instituto politecnico de viana do castelo">
+    <meta name="keywords" content="HTML, CSS, JavaScript, ipvc, programacao, curso">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" type="text/css" href="/style.css" />
+    <link rel="shortcut icon" href="#" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <title>Desenvolvimento web e multimédia - IPVC</title>
+    
+</head>
+<body>
+    <header>
+        <div class="container">
+
+            <div class="hamburger">
+                <div class="line" id="line1"></div>
+                <div class="line" id="line2"></div>
+                <div class="line" id="line3"></div>
+            </div>
+            
+            <aside class="sidebar">
+                <nav>
+                    <ul class="menu">
+                        <li class="menu-item"><a href="#section1" class="menu-link">Portfólio </a> </li> 
+                        <li class="menu-item"><a href="#section2" class="menu-link">Contacto</a></li>
+                    </ul>
+                </nav>
+            </aside>
+        </div>
+
+    </header>
+
+    <div class="section1">
+    <section>
+        
+        <ul>
+            
+            <li class="list" data-filter="design">Web</li>
+            <li class="list" data-filter="web">Design</li>
+            <li class="list" data-filter="modelagem3d">3D</li>
+        </ul>
+            <div class="cards">
+                <div class="card">
+                <img src="/img/lugardovinho.png"/>
+                    <div class="container">
+                        <h1>Design</h1>
+                            
+                    </div>
+                </div>
+                <div class="card">
+                <img src="/img/bemmequeque.png"/>
+                    <div class="container">
+                        <h1>Modelação 3D </h1>
+                        
+                    </div>
+                </div>
+                <div class="card">
+                <img src="/img/myfeet.png" />
+                    <div class="container">
+                        <h1>Web</h1>
+                        
+                    </div>
+                </div>
+            </div>
+    </section>
+</div>
+
+
+<footer>
+
+    <div class='container-contato'>
+            <div class="maps">
+                <h1>Nossa localização</h1>
+                
+            <div class="local">
+                <img src="/local.svg" alt="localização">
+
+                <p class="morada">Avenida do Atlântico, n.º 644 <br> 4900-348 Viana do Castelo</p>
+
+                <p class="telefone">Telefone: +351 258 819 700<br>
+                Telemóvel: +351 965 919 660
+                </p>
+                <div class="icones">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-heart"></i> 
+                    <i class="fas fa-share"></i> 
+                    <i class="fas fa-check"></i> 
+                </div>
+
+
+                
+            </div>
+            <div class="mapa">
+                <div class="mapagoogle">
+                    <div class="gmap_canvas"><iframe  scrolling="no" width="350" height="400"   id="gmap_canvas" src="https://maps.google.com/maps?q=Av.%20do%20Atl%C3%A2ntico%20644%204900,%20Viana%20do%20Castelo&t=&z=15&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" draggable=false marginwidth="0"></iframe><br>
+                    </div>
+                </div>
+
+            </div>
+
+            </div>
+            <div class="contato">
+                <h1>Entre em contato</h1>
+                <p>Envia uma mensagem através do formulário abaixo ou nos faça uma visita!</p>
+                    <form class="form">
+                        <label for="Nome"><h2>Seu nome:</h2></label><br><input type="text" id="nome">
+
+                        <label for="Email"><h2>Seu E-mail:</h2></label><br><input type="email" id="email">
+
+                        <label for="text"><h2>Sua mensagem:</h2></label><br>
+
+                        <textarea name="text" id="text" placeholder="Digite sua mensagem."></textarea><br>
+
+                        <button type="submit" id="enviar">Enviar</button>
+
+                    </form>
+            </div>
+            
+            
+
+
+        </div>
+
+    </footer>
+</div>
+    <div class="direitos">
+        <p> Todos os direitos reservados <span>&#x2764;</span> - Projeto design web 2023</p>
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>

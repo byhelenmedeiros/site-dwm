@@ -1,0 +1,495 @@
+
+/* Zerando o css*/
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+
+}
+
+body{
+    width: 100%; /*tamanho total da tela*/
+    height: 100%;
+    background-image: url(/img/bg.svg); /*iamgem de fundo*/
+    background-position:left;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+
+}
+/* MENU HAMBURGUER*/
+
+.hamburger{
+    width: 2rem;
+    height: 2rem;
+    position: fixed;
+    z-index: 5;
+    right: 2rem;
+    top: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    cursor: pointer;
+}
+
+.show-menu .hamburger{
+    right: 16rem;
+
+}
+
+.line{
+    width: 100%;
+    height: .1rem;
+    padding: 1px;
+    border-radius: 10px;
+    background-color: rgb(255, 255, 255);
+    box-shadow: 0.1rem 0.1rem 3px rgba(0, 0, 0, 0.788);
+    transition: transform .5s;
+}
+
+.show-menu #line1{
+    transform: rotate(45deg) translate(.4rem, .9rem);
+    background-color: #FA9600;
+    box-shadow: none;
+}
+
+.show-menu #line2{
+    opacity: 0;
+    visibility: hidden;
+}
+
+.show-menu #line3{
+    transform: rotate(-45deg) translate(.3rem, -.9rem);
+    background-color: #FA9600;
+    box-shadow: none;
+}
+
+.sidebar{
+    width: 20rem;
+    height: 100vh;
+    background-color: #002d40fa;
+    position: fixed;
+    top: 0;
+    right: -20rem;
+    transition: all .5s;
+}
+
+.show-menu .sidebar{
+    right: 0;
+}
+
+.menu{
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.menu-item{
+    text-align: center;
+    margin-bottom: .5rem;
+    margin-top: 4rem;
+}
+
+.menu-link{
+    font-family: "robotomono";
+    margin-top: 2em;
+    font-size: 2rem;
+    color: #FA9600;
+    transition: color .7s;
+}
+
+.menu-link:hover{
+    color: #FA9600;
+    transition: color .7s;
+    font-weight: bold;  
+}
+
+.portfolio-icon{
+    color: #999999;
+    font-size: 3em;
+
+}
+
+/*ICONE SUPERIOR E TEXTO*/
+.iconesuperior h1{
+    font-family: "robotomono";
+    color: #ffffff;
+    text-align: left !important;
+
+
+}
+.iconportfolio{
+    font-size: 2em;
+    color: #ffffff;
+
+}
+
+
+/*MENU SDE SELECAO*/
+
+section{
+    padding: 20px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 40px auto;
+
+}
+
+section ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+
+}
+
+section ul li{
+    background-color: #B36C00;
+    color: #eee;
+    padding:  8px 40px;
+    margin: 5px;
+    letter-spacing: 1px;
+    cursor: pointer;
+    font-family: tahoma;
+    font-weight: bold;
+    border-radius: 5px;
+    font-size: small;
+}
+
+section ul li:hover{ /*animacao hover do mini-menu*/
+
+    background-color: #ffffff;
+    color: #B36C00;
+    animation-duration: 2ms;
+    transform: scale(1.2); 
+
+    
+
+}
+
+section ul li.active{
+    background: #FA9600;
+    color: rgb(255, 255, 255);
+}
+
+/*INICIO DOS CARDS DE PORTFOLIO*/
+
+.cards {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+}
+
+.cards .card {
+    margin-right: 31px;
+}
+.cards .card:last-child {
+    margin-right: 0px;
+}
+
+.card {
+    height: 320px;
+    width: 380px;
+    border-radius: 15px;
+    background-color: #eee;
+    transition: 0.3s all ease-in;
+    box-shadow: 7px 18px 25px -14px rgba(0,0,0,0.52); /*sombra das divs*/
+}
+
+
+
+.card img {
+    height: 250px;
+    width: 380px;
+    border-radius: 15px 15px 0 0;
+
+    transition: 1s ease;
+    
+}
+.card img:hover {  /* uma animacao pequena em escala de cinza nas imagens*/
+    filter: grayscale(3);
+    transition: 1s ease; /*tempo da animacao*/
+    
+}
+
+/*titulos dos cards*/
+.card h1 {
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 34px;
+    font-family: tahoma;
+    color: #002D40;
+    text-align: center;
+    padding-top: 15px;
+}
+
+.card h1:hover {
+    color: #FA9600;
+    transition: .5s;
+    transition-timing-function: linear;
+    cursor: pointer;
+
+}
+
+
+
+
+.container-contato {
+    display: flex;
+    justify-content: center; 
+    align-items: stretch; 
+    flex-direction: row; 
+    flex-wrap: nowrap; 
+    align-content: stretch;
+    margin-bottom: 3em;
+
+
+
+}
+.container-contato > div{
+    display: inline-block;
+    background-color: rgb(255, 255, 255);
+    border-radius: 15px;
+    box-shadow: 7px 18px 25px -14px rgba(0,0,0,0.52);
+    padding: 40px;
+
+
+
+}
+
+.contato{
+
+    width: 450px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 15px;
+    box-shadow: 7px 18px 25px -14px rgba(0,0,0,0.52);
+
+
+}
+.maps{
+    order: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    flex-grow:0;
+    flex-shrink:1;
+    width: 700px;
+    margin: 0 0 0 50px;         
+    background-color: rgb(255, 255, 255);
+    border-radius: 15px;
+    box-shadow: 7px 18px 25px -14px rgba(0,0,0,0.52);
+
+}
+
+.container-contato h1{
+    font-family: "robotomono";
+    font-weight: bold;
+    text-align: center;
+    font-size: 2rem;
+    color: #002D40;
+
+}
+
+.container-contato p{
+    font-family: tahoma;
+    font-size: 0.8em;
+    font-weight: 700;
+    text-align: center;
+    padding-bottom: 2rem;
+
+}
+
+/*FORMULARIO*/
+
+#form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+
+}
+.container-contato h2{
+    font-size: 0.9rem;
+    height: 0px;
+    margin-top: 20px;
+
+
+
+}
+
+#nome, #email{
+
+    width: 445px;
+    height: 35px;
+    background-color: #ececec;
+    border: 2px solid #d4d4d4;;
+    border-radius: 5px;
+    cursor: pointer;
+
+}
+
+#text{
+    background-color: #ececec;
+    border: 2px solid #d4d4d4;;
+    border-radius: 5px;
+    resize: none;
+    width: 445px;
+    height: 7rem;
+    cursor: pointer;
+
+}
+
+#text::placeholder{
+    padding: 0 10px;
+
+}
+
+label{
+    font-family: tahoma;
+    color: #002D40;
+    font-size: 0.8rem;
+}
+
+/* BOTAO DE SUBMIT*/
+
+#enviar{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    font-weight: bold;
+    font-family: "robotomono";
+    text-transform: uppercase;
+    color: #eee;
+    font-size: 1rem;
+    background-color: #002D40;
+    padding: 5px 50px;
+    border-radius: 10px;
+    border: none;
+    margin-top: 30px;
+    cursor: pointer;
+
+}
+
+/* MAPA*/
+.mapagoogle{
+    display: inline;
+    text-align:right;
+    height:400px;
+    width:400;
+    padding: 10px;
+    border-radius: 15px;
+}
+
+    iframe{
+        pointer-events: none;
+    }
+    
+
+.gmap_canvas {
+
+    overflow:hidden;
+    background:none!important;
+    height:400px;
+    width: 350px;    
+    border-radius: 30px;
+}
+
+
+
+    /* ICONE DE LOCALIZAÇÃO*/
+
+.local{
+    width: 50%;
+    display: block;
+    height: 30px;
+    width: 300px;
+
+/*MORADA E CONTATOS*/
+    
+
+}
+
+.local img{
+    height: 5em;
+    display: block;
+    margin: auto;
+    padding: 2em;
+    transition: transform 0.3s ease-in-out;
+}
+
+.local img:hover{
+    transform: scale(1.1) ;
+}
+.local p{
+    font-size: 1em;
+    font-weight: bold;
+
+
+
+
+}
+.mapagoogle{
+    float: right;
+    width: 50%;
+    display: block;
+}
+    
+.icones{
+    display: flex;
+    justify-content: center;
+
+}
+.icones i{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #ffffff;
+    background-color: #FA9600;
+    padding: 10px;
+    margin: 10px;
+    border-radius: 10px;
+}
+.icones i:hover{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #ffffff;
+    background-color: #002D40;
+    padding: 10px;
+    margin: 10px;
+    border-radius: 10px;
+}
+
+
+
+/*FOOTER DIREITOS RESERVADOS*/
+
+.direitos strong:hover{
+    color: #7a7a7a;
+
+}
+
+.direitos{
+    background-color: #eee;
+    padding: 1em;
+    text-align: center;
+}
+
+.direitos p{
+    font-family: tahoma;
+}
+
+.direitos span{
+    color: #a30000;  /*coracao do final*/
+
+}
+
