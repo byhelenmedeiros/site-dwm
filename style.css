@@ -11,7 +11,7 @@
 body{
     width: 100%; /*tamanho total da tela*/
     height: 100%;
-    background-image: url(/img/bg.svg); /*iamgem de fundo*/
+    background-image: url(bg.svg); /*iamgem de fundo*/
     background-position:left;
     background-repeat: no-repeat;
     background-size: cover;
